@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Pierwszy projekt springowy</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1>Podaj x oraz y:</h1>
+        <form action="/hello" method="post">
+            x: <input type="number" name="x" />
+            <select name="operacja">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>                
+            </select>
+                
+            y: <input type="number" name="y" />
+            <input type="submit" value="Oblicz" />
+        </form>
+    </body>
+</html>
